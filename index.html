@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Tabs -->
+  <div class="tabs">
+    <button class="tab-button active" data-tab="home">Home</button>
+    <button class="tab-button" data-tab="gallery">Gallery</button>
+    <button class="tab-button" data-tab="form">Form</button>
+  </div>
+
+  <!-- Tab Content -->
+  <div id="home" class="tab-content active">
+    <h1>Welcome to Our Interactive Page</h1>
+    <p>Explore our features below.</p>
+  </div>
+  <div id="gallery" class="tab-content">
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+      <img src="image1.jpg" alt="Image 1" class="gallery-item">
+      <img src="image2.jpg" alt="Image 2" class="gallery-item">
+      <img src="image3.jpg" alt="Image 3" class="gallery-item">
+      <img src="image4.jpg" alt="Image 4" class="gallery-item">
+      <img src="image5.jpg" alt="Image 5" class="gallery-item">
+      <img src="image6.jpg" alt="Image 6" class="gallery-item">
+      <img src="image7.jpg" alt="Image 7" class="gallery-item">
+      <img src="image8.jpg" alt="Image 8" class="gallery-item">
+      <img src="image9.jpg" alt="Image 9" class="gallery-item">
+      <img src="image10.jpg" alt="Image 10" class="gallery-item">
+      <img src="image11.jpg" alt="Image 11" class="gallery-item">
+
+    </div>
+  </div>
+  <div id="form" class="tab-content">
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <span id="email-error" class="error-message"></span>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <span id="password-error" class="error-message"></span>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+.tab-button {
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.tab-button.active {
+  background-color: #666;
+}
+.tab-content {
+  display: none;
+  padding: 20px;
+}
+.tab-content.active {
+  display: block;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  gap: 10px;
+}
+.gallery-item {
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+.gallery-item:hover {
+  transform: scale(1.1);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.error-message {
+  color: red;
+  font-size: 0.9em;
+}
+
+       
